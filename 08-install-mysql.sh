@@ -23,7 +23,7 @@ yum install git -y
 
 if [ $? -ne 0 ]
 then
-    echo "error: mysql has not installed"
+    echo "error: git has not installed"
 else
-    echo "mysql installed successfully"
+    echo "git installed successfully"
 fi
