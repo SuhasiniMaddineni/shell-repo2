@@ -1,7 +1,8 @@
 #!/bin/bash
 
+ID=$(id -u)
 
-if [ $? -ne 0 ]
+if [ $ID -ne 0 ]
 then
     echo "error: this is not root user,you please run inside root user"
     exit 1
