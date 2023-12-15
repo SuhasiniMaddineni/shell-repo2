@@ -19,4 +19,11 @@ else
   echo "installed mysql"
 fi
 
+yum install git -y
 
+if [ $? -ne 0 ]
+then
+  echo "error: not installed git"
+else
+  echo "installed git"
+fi
