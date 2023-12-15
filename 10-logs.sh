@@ -1,9 +1,14 @@
 #!/bin/bash
 
 ID=$(id -u)
+
 echo "script name is: $0"
+
 TIMESTAMP=$(date +%F-%H-%M-%S)
+
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
+
+echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 
 if [ $ID -ne 0 ]
     then
