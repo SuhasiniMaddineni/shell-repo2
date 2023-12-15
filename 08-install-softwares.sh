@@ -10,7 +10,7 @@ if [ $ID -ne 0 ]
        echo "inside root user"
 fi
 
-yum install mysql -y
+yum install mysqll -y
 
 if [ $? -ne 0 ]
 then
@@ -19,7 +19,7 @@ else
   echo "installed mysql"
 fi
 
-yum install gitt -y
+yum install git -y
 
 if [ $? -ne 0 ]
 then
@@ -27,3 +27,4 @@ then
 else
   echo "installed git"
 fi
+
