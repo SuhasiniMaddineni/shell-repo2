@@ -9,3 +9,5 @@ if [ $ID -ne 0 ]
        echo "inside root user"
 fi
 
+yum install mysql -y
+
