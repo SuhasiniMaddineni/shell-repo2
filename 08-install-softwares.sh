@@ -2,10 +2,10 @@
 
 ID=$(id -u)
 
-if[ $ID -ne 0 ]
+if [ $ID -ne 0 ]
     then
-    echo "error: not root user"
+       echo "error: not root user"
     else
-    echo "inside root user"
+       echo "inside root user"
 fi
 
