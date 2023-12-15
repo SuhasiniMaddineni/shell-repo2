@@ -9,6 +9,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 #echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
+ID=$(id -u)
 
 if [ $ID -ne 0 ]
     then
