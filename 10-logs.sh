@@ -24,10 +24,10 @@ validate(){
 
     if [ $1 -ne 0 ]
     then
-      echo -e "error:$2.... $R failed"
+      echo -e "error:$2.... $R failed $N"
       exit 1
     else
-      echo -e "$2.... $G success"
+      echo -e "$2.... $G success $N"
     fi
 }
 
