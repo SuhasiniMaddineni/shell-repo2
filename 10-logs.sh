@@ -12,7 +12,7 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 if [ $ID -ne 0 ]
     then
-       echo "$R error: not root user $N"
+       echo -e "$R not root user $N"
        exit 1
     else
        echo "inside root user"
@@ -24,10 +24,10 @@ validate(){
 
     if [ $1 -ne 0 ]
     then
-      echo "$2.... $R failed $N"
+      echo -e "error:$2.... $R failed $N"
       exit 1
     else
-      echo "$2.... $G success $N"
+      echo -e "$2.... $G success $N"
     fi
 }
 
