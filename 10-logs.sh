@@ -2,13 +2,13 @@
 
 ID=$(id -u)
 
-echo "script name is: $0"
+#echo "script name is: $0"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
-echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
+#echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 
 if [ $ID -ne 0 ]
     then
@@ -17,6 +17,8 @@ if [ $ID -ne 0 ]
     else
        echo "inside root user"
 fi
+echo "script name is: $0"
+echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 
 validate(){
 
