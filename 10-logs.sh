@@ -16,7 +16,7 @@ if [ $ID -ne 0 ]
        echo "$R error: not root user $N"
        exit 1
     else
-       echo "$G inside root user $N"
+       echo "inside root user"
 fi
 echo "script name is: $0"
 echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
