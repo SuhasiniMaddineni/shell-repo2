@@ -30,10 +30,10 @@ validate(){
 
     if [ $1 -ne 0 ]
     then
-      echo "$R $2.... failed"
+      echo "$2.... $R failed"
       exit 1
     else
-      echo "$G $2.... success"
+      echo "$2.... $G success"
     fi
 }
 
