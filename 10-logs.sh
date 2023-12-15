@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ID=$(id -u)
-
+echo "script name is: $0"
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
