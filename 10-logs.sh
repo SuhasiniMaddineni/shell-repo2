@@ -18,10 +18,10 @@ N="\e[0m"
 
 if [ $ID -ne 0 ]
     then
-       echo "$R error: not root user"
+       echo "$R error: not root user $N"
        exit 1
     else
-       echo "$G inside root user"
+       echo "$G inside root user $N"
 fi
 echo "script name is: $0"
 echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
@@ -30,10 +30,10 @@ validate(){
 
     if [ $1 -ne 0 ]
     then
-      echo "$2.... $R failed"
+      echo "$2.... $R failed $N"
       exit 1
     else
-      echo "$2.... $G success"
+      echo "$2.... $G success $N"
     fi
 }
 
