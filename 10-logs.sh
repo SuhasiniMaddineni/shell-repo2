@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ID=$(id -u)
+#ID=$(id -u)
 
 #echo "script name is: $0"
 
