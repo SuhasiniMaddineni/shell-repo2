@@ -12,7 +12,7 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "script started execution at: $TIMESTAMP" &>> $LOGFILE
 
-if[ $ID -ne 0]
+if[ $ID -ne 0 ]
     then
     echo -e "$R Error: yur not root user $N"
     else
