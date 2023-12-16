@@ -17,7 +17,7 @@ if [ $ID -ne 0 ]
     echo -e "$R Error: yur not root user $N"
     exit 1
     else
-    echo -e "$G your in root user"
+    echo -e "$G your in root user $N"
 fi
 
 
