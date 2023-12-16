@@ -12,9 +12,10 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "script started execution at: $TIMESTAMP" &>> $LOGFILE
 
-if[ $ID -ne 0 ]
+if [ $ID -ne 0 ]
     then
     echo -e "$R Error: yur not root user $N"
+    exit 1
     else
     echo -e "$G your in root user"
 fi
@@ -23,7 +24,7 @@ fi
 validate(){
   if [ $1 -ne 0 ]
     then
-    echo -e "error:$2... $R failed $N"
+    echo -e "$2... $R failed $N"
     else
     echo -e "$2...$G success $N"
   fi
