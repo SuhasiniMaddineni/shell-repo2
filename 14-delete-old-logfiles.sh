@@ -19,4 +19,4 @@ do
   echo "deleting file: $line"
   rm -rf $line
 
-done $Files_to_delete
+done <<< $Files_to_delete
