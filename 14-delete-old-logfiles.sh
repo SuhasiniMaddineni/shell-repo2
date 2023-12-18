@@ -9,7 +9,7 @@ N="\e[0m"
 
 if [ ! -d $Source_dir ]
 then
-  echo "$R there is not source directory under this $Source_dir $N"
+  echo -e "$R there is not source directory under this $Source_dir $N"
 fi 
 
 Files_to_delete=$(find $Source_dir -type f -mtime +14 -name "*.log")
@@ -19,4 +19,4 @@ do
   echo "deleting file: $line"
   rm -rf $line
 
-done
+done $Files_to_delete
