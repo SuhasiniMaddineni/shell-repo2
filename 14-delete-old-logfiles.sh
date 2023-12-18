@@ -12,7 +12,7 @@ then
   echo "$R there is not source directory under this $Source_dir $N"
 fi 
 
-Files-to_delete=$(find . -type f -mtime +14 -name "*.log")
+Files-to_delete=$(find "/tmp/shellscript-logs" -type f -mtime +14 -name "*.log")
 
 while IFS= read -r line
 do 
