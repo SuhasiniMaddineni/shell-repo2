@@ -7,9 +7,9 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if[ ! -f $file ]
-then
- echo "$R  $file does not exit $N"
+if [ ! -f $file ]
+  then
+    echo "$R  $file does not exit $N"
 fi
 
 while IFS= ":" read -r username password user_id group_id user_fullname home_dir shell_path
