@@ -11,8 +11,8 @@ do
     
     if [ $usage -ge $DISK_THRESHOLD ]
     then
-      message+="High disk usage on $partition: $usage"
+      message+="High disk usage on $partition: $usage\n"
     fi
 done <<< $DISK_USAGE 
 
-echo "message: $message"
+echo -e "message: $message"
